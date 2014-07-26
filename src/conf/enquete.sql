@@ -15,14 +15,27 @@ CREATE TABLE usuarios (id INTEGER,
                        email varchar(120), PRIMARY KEY(id));
 
 INSERT INTO usuarios (id, nome, email) VALUES (1, 'guest','guest@vote_no_livro.com');
-/* necessário um usuario guest para entrar votando com ele e depois atualizar a tabela 
-de votos com as informações de um usuario real */
+/* necessário um usuario guest para entrar votando com ele e depois ser atualizado 
+o nome e o email do usuario real */
 
 CREATE TABLE votacao_usr (id INTEGER, 
                           usuario_id int, 
                           livro_id int, 
                           votos int, PRIMARY KEY(id));
 
-CREATE VIEW livros_votados AS (SELECT vu.id as votno_nr, lv.titulo, lv.autor, lv.resenha, lv.capa,
-us.nome, vu.votos FROM votacao_usr vu, livros lv, usuarios us WHERE vu.livro_id = lv.id AND
-vu.usuario_id = us.id);
+CREATE VIEW livros_votados AS 
+    (SELECT vu.id as voto_nr, lv.titulo, lv.autor, lv.resenha, lv.capa, vu.votos, 
+          vu.usuario_id, us.nome as usuario 
+     FROM votacao_usr vu, livros lv, usuarios us 
+     WHERE vu.livro_id = lv.id AND vu.usuario_id = us.id);
+
+CREATE VIEW resultado_enquete AS 
+    (SELECT DISTINCT MIN(vu.id) as voto_nr, 
+            lv.titulo, 
+            lv.capa, 
+            COUNT(vu.votos) as votos, 
+            AVG(vu.votos) as ranck, 
+            us.nome as usuario 
+     FROM votacao_usr vu, livros lv, usuarios us 
+     WHERE vu.livro_id = lv.id AND vu.usuario_id = us.id
+     GROUP BY lv.TITULO, lv.CAPA, us.NOME);
