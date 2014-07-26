@@ -21,7 +21,8 @@ Aplicativo de teste VOTE-NO-LIVRO solicitado pela BlueSoft
 * a view "livros_votados" monta a query dos livros escolhidos por um usuario qualquer
 * a view "resultado_enquete" monta a query do ranck dos livros votados, geral e de cada usuario
 
-
+- Modo Operandis
+- 
 * o aplicativo foi todo escrito usando JSP puro
 * Conforme segue, ao acessar localhost:8080/vote_no_livro abre uma pagina com dois livros com 
   titulo, autor, uma resenha e a capa, logo abaixo da capa tem um botao para votar nesse livro
