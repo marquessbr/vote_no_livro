@@ -22,7 +22,7 @@ Aplicativo de teste VOTE-NO-LIVRO solicitado pela BlueSoft
   ao concluir a enquete, o usuario real terá de passar suas informações para o sistema que irá 
   verificar se esse usuario já existe ou gravar um novo em caso negativo, com isso, o sistema
   obtem uma chave para esse usuario (existente ou nova) e com base nessa informação o sistema 
-  subustitui todos os registro cujo valor da coluna "usuario_id" seja igual a "1" (um), por 
+  subustitui todos os registro cujo valor da coluna "usuario_id" seja igual a "1" (um) por 
   essa nova chave, atualizando a lista de livros que foram inseridos nessa tabela quando 
   foram escolhidos por um usuario até então desconhecido para o sistema.
 
