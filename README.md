@@ -5,7 +5,7 @@ Aplicativo de teste VOTE-NO-LIVRO solicitado pela BlueSoft
 
 - Instruções
 - 
-* Necessário inicializar um servidor GlassFish antes de rodar a aplicação.
+* Necessário inicializar um servidor GlassFish 4.0 antes de rodar a aplicação.
 * Necessário criar um db apache derby de nome "enquete" e rodar o script "enquete.sql" localizado 
   em "vote_no_livro/src/conf" para criar a estrutura das tabelas utilizadas
 
@@ -14,15 +14,15 @@ Aplicativo de teste VOTE-NO-LIVRO solicitado pela BlueSoft
 * A referida estrutura compoe-se de:
 * uma tabela "livros", com as colunas id, titulo, autor, resenha e capa
 * uma tabela "usuarios" com as colunas id, nome, email e que é inicializada com um usuario "guest"
-* uma tabela "votacao-usr" com as colunas id, usuario-id, livro-id e votos. 
+* uma tabela "votacao_usr" com as colunas id, usuario_id, livro_id e votos. 
   Através das páginas de escolha, o usuario  "guest" (um usuario qualquer) escolhe os livros que 
   deseja favoritar e o sistema acrescenta a essa tabela um novo registro com a id do livro
-  escolhido na coluna "livro-id" juntamente com o valor "1" (um) para a coluna "usuario-id", 
+  escolhido na coluna "livro_id" juntamente com o valor "1" (um) para a coluna "usuario_id", 
   valor relativo ao usuario "guest".
   ao concluir a enquete, o usuario real terá de passar suas informações para o sistema que irá 
   verificar se esse usuario já existe ou gravar um novo em caso negativo, com isso, o sistema
   obtem uma chave para esse usuario (chave existente ou nova) e com base nessa informação o sistema 
-  subustitui todos os registro cujo valor na coluna "usuario-id" seja igual a "1" (um) pelo 
+  subustitui todos os registro cujo valor na coluna "usuario_id" seja igual a "1" (um) pelo 
   valor dessa nova chave, atualizando a lista de livros que foram inseridos nessa tabela ao
   serem escolhidos por um usuario até então desconhecido para o sistema.
 
@@ -33,7 +33,7 @@ Aplicativo de teste VOTE-NO-LIVRO solicitado pela BlueSoft
 - Modo Operandis
 - 
 * o aplicativo foi todo escrito usando JSP puro
-* Conforme segue, ao acessar localhost:8080/vote_no_livro abre uma pagina com dois livros com 
+* Conforme segue, ao acessar "localhost:8080/vote_no_livro/" abre uma pagina com dois livros com 
   titulo, autor, uma resenha e a capa, logo abaixo da capa tem um botao para votar nesse livro
   no fim da lista tem dois botoes um para votar em mais livros e outro para concluir a enquete.
 * A página mais livros é igual a primeira com a diferença de un dos botoes do final da lista
