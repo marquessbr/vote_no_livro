@@ -26,13 +26,16 @@ Aplicativo de teste VOTE-NO-LIVRO solicitado pela BlueSoft
 * o aplicativo foi todo escrito usando JSP puro
 * Conforme segue, ao acessar localhost:8080/vote_no_livro abre uma pagina com dois livros com 
   titulo, autor, uma resenha e a capa, logo abaixo da capa tem um botao para votar nesse livro
-  no fim da lista tem dois botoes um para votar em mais livros e outro para concluir a enquete
+  no fim da lista tem dois botoes um para votar em mais livros e outro para concluir a enquete.
 * A página mais livros é igual a primeira com a diferença de un dos botoes do final da lista
-  que em vez de ser para escolher mais livros, serve para voltar ao inicio
-* uma vez clicado no botão concluir a pesquisa, o usuario é posicionado em uma pagina com 
-  a lista dos livros que ele escolheu e um campo para informar seu nome e seu email, o sistema
-  atualiza os dados do usuario automaticamente
+  que em vez de ser um para escolher mais livros, tem um para voltar ao inicio.
+* Uma vez clicado no botão "concluir a enquete", o usuario é posicionado em uma pagina com 
+  a lista dos livros que ele escolheu e dois campos para informar seu nome e seu email, o sistema
+  atualiza os dados do usuario automaticamente quando o usuario clica no botão "Finalizar a enquete",
+* Se nenhum livro foi escolhido, essa pagina retorna apenas um aviso para o usuario e apresenta
+  um botão para o mesmo voltar para a página inicial.
 * apos informar os dados pertinentes o sistema direciona o usuario para uma pagina com uma lista
-* dos livros votados com a quantidade de votos que cada livro obteve e a media de votos por usuario
-* 
-qualquer duvida me contate por email
+  dos livros votados com a quantidade de votos que cada livro obteve e a media dos votos de cada  
+  usuario para esse livro.
+
+qualquer duvida, entre em contato por email
