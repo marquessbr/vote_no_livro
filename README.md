@@ -37,7 +37,7 @@ Aplicativo de teste VOTE-NO-LIVRO solicitado pela BlueSoft
   titulo, autor, uma resenha e a capa, logo abaixo da capa tem um botao para votar nesse livro
   no fim da lista tem dois botoes um para votar em mais livros e outro para concluir a enquete.
 * A página mais livros é igual a primeira com a diferença de un dos botoes do final da lista
-  que em vez de ser um para escolher mais livros, tem um para voltar ao inicio.
+  que em vez de ser para escolher mais livros, serve para voltar para a página inicial.
 * Uma vez clicado no botão "concluir a enquete", o usuario é posicionado em uma pagina com 
   a lista dos livros que ele escolheu e dois campos para informar seu nome e seu email, o sistema
   atualiza os dados do usuario automaticamente quando o usuario clica no botão "Finalizar a enquete",
