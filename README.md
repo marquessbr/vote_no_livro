@@ -14,17 +14,17 @@ Aplicativo de teste VOTE-NO-LIVRO solicitado pela BlueSoft
 * A referida estrutura compoe-se de:
 * uma tabela "livros", com as colunas id, titulo, autor, resenha e capa
 * uma tabela "usuarios" com as colunas id, nome, email e que é inicializada com um usuario "guest"
-* uma tabela "votacao_usr" com as colunas id, usuario_id, livro_id e votos. 
+* uma tabela "votacao-usr" com as colunas id, usuario-id, livro-id e votos. 
   Através das páginas de escolha, o usuario  "guest" (um usuario qualquer) escolhe os livros que 
   deseja favoritar e o sistema acrescenta a essa tabela um novo registro com a id do livro  
-  escolhido na coluna "livro_id" juntamente com o valor "1" (um) para a coluna "usuario_id", 
+  escolhido na coluna "livro-id" juntamente com o valor "1" (um) para a coluna "usuario-id", 
   valor relativo ao usuario "guest".
   ao concluir a enquete, o usuario real terá de passar suas informações para o sistema que irá 
   verificar se esse usuario já existe ou gravar um novo em caso negativo, com isso, o sistema
-  obtem uma chave para esse usuario (existente ou nova) e com base nessa informação o sistema 
-  subustitui todos os registro cujo valor da coluna "usuario_id" seja igual a "1" (um) por 
-  essa nova chave, atualizando a lista de livros que foram inseridos nessa tabela quando 
-  foram escolhidos por um usuario até então desconhecido para o sistema.
+  obtem uma chave para esse usuario (chave existente ou nova) e com base nessa informação o sistema 
+  subustitui todos os registro cujo valor na coluna "usuario-id" seja igual a "1" (um) pelo 
+  valor dessa nova chave, atualizando a lista de livros que foram inseridos nessa tabela ao
+  serem escolhidos por um usuario até então desconhecido para o sistema.
 
 * as informações variaveis são obtidas de dois views, como segue:
   a view "livros_votados" monta a query dos livros escolhidos por um usuario qualquer
