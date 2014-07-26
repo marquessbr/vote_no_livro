@@ -16,7 +16,7 @@ Aplicativo de teste VOTE-NO-LIVRO solicitado pela BlueSoft
 * uma tabela "usuarios" com as colunas id, nome, email e que é inicializada com um usuario "guest"
 * uma tabela "votacao-usr" com as colunas id, usuario-id, livro-id e votos. 
   Através das páginas de escolha, o usuario  "guest" (um usuario qualquer) escolhe os livros que 
-  deseja favoritar e o sistema acrescenta a essa tabela um novo registro com a id do livro  
+  deseja favoritar e o sistema acrescenta a essa tabela um novo registro com a id do livro
   escolhido na coluna "livro-id" juntamente com o valor "1" (um) para a coluna "usuario-id", 
   valor relativo ao usuario "guest".
   ao concluir a enquete, o usuario real terá de passar suas informações para o sistema que irá 
