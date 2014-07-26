@@ -27,8 +27,8 @@ Aplicativo de teste VOTE-NO-LIVRO solicitado pela BlueSoft
   serem escolhidos por um usuario até então desconhecido para o sistema.
 
 * as informações variaveis são obtidas de dois views, como segue:
-  a view "livros_votados" monta a query dos livros escolhidos por um usuario qualquer
-  a view "resultado_enquete" monta a query do ranck dos livros votados, geral e de cada usuario
+  a view "livros_votados" monta a query dos livros escolhidos por um usuario qualquer 
+  a view "resultado_enquete" monta a query do ranck dos livros votados, geral e de cada usuario 
 
 - Modo Operandis
 - 
