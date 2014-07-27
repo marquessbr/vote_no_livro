@@ -19,7 +19,7 @@ Aplicativo de teste VOTE-NO-LIVRO solicitado pela BlueSoft
   deseja favoritar e o sistema acrescenta a essa tabela um novo registro com a id do livro
   escolhido na coluna "livro_id" juntamente com o valor "1" (um) para a coluna "usuario_id", 
   valor relativo ao usuario "guest".
-  ao concluir a enquete, o usuario real terá de passar suas informações para o sistema que irá 
+  Ao concluir a enquete, o usuario real terá de passar suas informações para o sistema que irá 
   verificar se esse usuario já existe ou gravar um novo em caso negativo, com isso, o sistema
   obtem uma chave para esse usuario (chave existente ou nova) e com base nessa informação o sistema 
   subustitui todos os registro cujo valor na coluna "usuario_id" seja igual a "1" (um) pelo 
@@ -43,7 +43,7 @@ Aplicativo de teste VOTE-NO-LIVRO solicitado pela BlueSoft
   atualiza os dados do usuario automaticamente quando o usuario clica no botão "Finalizar a enquete",
 * Se nenhum livro foi escolhido, essa pagina retorna apenas um aviso para o usuario e apresenta
   um botão para o mesmo voltar para a página inicial.
-* apos informar os dados pertinentes o sistema direciona o usuario para uma pagina com uma lista
+* Apos informar os dados pertinentes o sistema direciona o usuario para uma pagina com uma lista
   dos livros votados com a quantidade de votos que cada livro obteve e a media dos votos de cada  
   usuario para esse livro.
 
